@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2E6D94; /* Azul semelhante ao da imagem */
+  color: white;
+  scroll-behavior: smooth; /* Suaviza o scroll */
+}
+
+header {
+  background-color: #1C4F73;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-button {
+  background-color: white;
+  color: #1C4F73;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #dfeaf2;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1em auto;
+  max-width: 800px;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .text-content, .image-content {
+    width: 100%;
+  }
+}
+
+
+
+/* Estilização do header extra para as logos */
+.logos-header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.logos-header img {
+  max-width: 150px; /* Ajuste o tamanho das logos */
+  margin: 40px;
+}
+
+footer {
+  background-color: #1C4F73;
+  text-align: center;
+  padding: 10px;
+}

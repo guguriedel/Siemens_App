@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil and Gas to Offshore Wind</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Oil and Gas to Offshore Wind</h1>
+        <nav>
+            <button class="nav-button" onclick="scrollToSection('intro')">Value Proposition</button>
+            <button class="nav-button" onclick="scrollToSection('detalhes')">Step-by-Step</button>
+            <button class="nav-button" onclick="scrollToSection('logos-header')">Sponsors</button>
+            <button class="nav-button" onclick="goToExternalLink()">Get to Know the Tool</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Optimize offshore platforms decomissioning with a smart tool that generates a ranked list of the best repurposing options balancing sustainability, efficiency and economic viability.</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>The growing need for decarbonization and the high costs of offshore platform decommissioning make it essential to adopt a strategic approach for repurposing these structures. Our application offers an innovative solution to support decision-makers in the oil and gas industry.</p>
+                    <p>Through an interactive, multi-criteria-based tool, our system enables stakeholders to assess sustainable repurposing alternatives. Users can define evaluation criteria, assign weights to each, and obtain a ranking of the best options, such as wind turbines, solar panels, or macroalgae cultivation.</p>
+                    <p>The platform not only simplifies decision-making but also ensures that economic, environmental, and regulatory factors are considered. In this way, we help transform decommissioning challenges into opportunities for the energy transition.</p>
+                </div>
+                <div class="image-content">
+                    <img src="tabela.jpg"
+                        alt="Example Table"
+                        style="padding-top: 50px; display: block; border: none;">
+                         
+                </div>
+            </div>
+        </section>
+        <section id="detalhes">
+            <h2>How It Works</h2>
+            <h3>Step 1: User Input</h3>
+            <p>The user select the most influence criteria for the decision making process such as cost-effectviness , local economic impact ... </p>
+            <h3>Step 2: Weight Assignment</h3>
+            <p>Each criterion is assigned a weight based on its relative importance to the user's strategic goals.</p>
+            <h3>Step 3: Data Analysis</h3>
+            <p>The system processes the inputs and cross-references them with technical and economic fesability data. Thus generating a ranked list os viable repurposing options.</p>
+            <h3>Step 4: Results Visualization</h3>
+            <p>The tool presents a comparative ranking of potential projects, such as offshore wind farms, artifical reefs or marine biomass cultivation.</p>
+        </section>
+    </main>
+
+    <!-- Header extra para as logos -->
+    <header id="logos-header" class="logos-header">
+        <!-- Substitua os arquivos logo1.png, logo2.png, etc., pelos seus arquivos PNG -->
+        <img src="logo_puc.png" alt="Logo Puc"
+            
+            width = 50>
+        <img src="logo_frog.png" alt="Logo FROG">
+
+    </header>
+    
+    <footer>
+        <p>frog@puc-rio.br</p>
+    </footer>
+    
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function goToExternalLink() {
+            window.location.href = "https://paulamacaira.shinyapps.io/OG2OW/"; 
+        }
+    </script>
+</body>
+</html>
